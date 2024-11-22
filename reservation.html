@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top p-3">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand m-2 p-2" href="#">
+                <img src="images/icons/logo2.png" class="img-fluid rounded-top" alt="Logo" />
+            </a>
+    
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler border-0 p-2 m-2 bg-light shadow rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse p-lg-3" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start reservation -->
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/bg-title-page-02.jpg " class="d-block w-100 alt=" ...">
+                    <div class="carousel-caption mb-5" style="transform: translateY(-100%);">
+                        <h2 class="tit1 text-white mb-4 mt-4">Reservation</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- end reservation -->
+
+    <!-- start booking -->
+    <section id="booking" class="d-flex align-items-center" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-12 p-4">
+                    <div class="welcome-text mb-4 text-center">
+                        <span class="tit2 mb-4 mt-4">Reservation</span>
+                        <h3 class="tit1">Book Table</h3>
+                    </div>
+                    <form action="#" method="post" class="p-4">
+                        <div class="row">
+                            <!-- Date -->
+                            <div class="col-md-4 mb-3">
+                                <label for="date" class="form-label">Date</label>
+                                <input type="date" id="date" class="form-control" placeholder="Date">
+                            </div>
+                            <!-- Time -->
+                            <div class="col-md-4 mb-3">
+                                <label for="time" class="form-label">Time</label>
+                                <select id="time" class="form-control">
+                                    <option value="9:00">9:00</option>
+                                    <option value="9:30">9:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                </select>
+                            </div>
+                            <!-- People -->
+                            <div class="col-md-4 mb-3">
+                                <label for="guest" class="form-label">People</label>
+                                <select id="guest" class="form-control">
+                                    <option value="1 person">1 person</option>
+                                    <option value="2 persons">2 persons</option>
+                                    <option value="3 persons">3 persons</option>
+                                    <option value="4 persons">4 persons</option>
+                                    <option value="5 persons">5 persons</option>
+                                    <option value="6 persons">6 persons</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Name -->
+                            <div class="col-md-4 mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Name">
+                            </div>
+                            <!-- Phone -->
+                            <div class="col-md-4 mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="text" id="phone" class="form-control" placeholder="Phone">
+                            </div>
+                            <!-- Email -->
+                            <div class="col-md-4 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="head-btn w-50 m-auto">
+                                book now
+                            </button>
+                        </div>
+                    </form>
+                    <div class="row m-2 g-5">
+                        <!-- Reserve by Phone -->
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <h4 class="text-uppercase mt-5 mb-3">Reserve by Phone</h4>
+                            <p class="text-muted mb-5">
+                                Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus.
+                                <span class="fw-bold">Nulla vulputate</span>, lectus vel volutpat efficitur, orci lacus
+                                sodales sem, sit amet quam:
+                                <span class="text-danger fw-bold">+1 800 123 4567</span>
+                            </p>
+                        </div>
+                        <!-- For Event Booking -->
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <h4 class="text-uppercase mt-5 mb-3">For Event Booking</h4>
+                            <p class="text-muted mb-5">
+                                Donec feugiat ligula rhoncus:
+                                <span class="text-danger fw-bold">(001) 345 6889</span>, varius nisl sed, tincidunt lectus
+                                sodales sem.
+                            </p>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- end booking section -->
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row g-4 p-4">
+                <!-- Contact Us Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-map-marker-alt me-2"></i>8th floor, 379 Hudson St, New York, NY 10018</li>
+                        <li><i class="fa fa-phone me-2"></i>(+1) 96 716 6879</li>
+                        <li><i class="fa fa-envelope me-2"></i>contact@site.com</li>
+                    </ul>
+                    <h4 class="mt-5 text-uppercase">Opening Times</h4>
+                    <ul class="list-unstyled">
+                        <li>09:30 AM – 11:00 PM</li>
+                        <li>Every Day</li>
+                    </ul>
+                </div>
+
+                <!-- Latest Twitter Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Latest Twitter</h4>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">@colorlib</a>: <br> Activello is a good option. It has a slider built into that displays
+                        the featured image in the slider. <br>
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <p><small>21 Dec 2017</small></p>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">@colorlib</a>: <br> Activello is a good option. It has a slider built into that displays
+                        the featured image in the slider. <br>
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <p><small>21 Dec 2017</small></p>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Gallery</h4>
+                    <div class="row g-2 gallery">
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-01.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-02.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-03.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-04.jpg" alt="Gallery Image 4">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-05.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-06.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-07.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-08.jpg" alt="Gallery Image 4">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-09.jpg" alt="Gallery Image 5">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-10.jpg" alt="Gallery Image 6">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-11.jpg" alt="Gallery Image 7">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-12.jpg" alt="Gallery Image 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-footer ">
+            <div class="container d-flex mt-1 align-items-center justify-content-between">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div>
+                    Copyright © 2018 All rights reserved | This template is made with <i class="fa fa-heart"></i> by
+                    <a href="https://colorlib.com" target="_blank">AHMED HUSSAM</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Back to Top Button -->
+    <button class="backToTop btn btn-danger rounded-circle">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,967 @@
+/* Font Faces */
+@font-face {
+    font-family: 'myfont';
+    src: url(fonts/courgette/Courgette-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(fonts/poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fonts/montserrat/Montserrat-Italic.ttf) format('truetype');
+}
+
+
+/* Root Variables */
+:root {
+    --red-color: #d41b22;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #666666;
+    --light-gray-color: #919191;
+}
+
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    z-index: 3 !important;
+    height: 100px;
+    border-top: solid 4px var(--red-color);
+
+}
+
+.navbar-nav>li>a {
+    color: var(--black-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'montserrat';
+}
+
+.navbar-nav>li>a:hover {
+    color: var(--red-color) !important;
+}
+
+.navbar-nav {
+    padding: 0 10px !important;
+    gap: 30px;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: fixed; 
+        top: 0;
+        right: -100%; 
+        width: 300px; 
+        height: 100%; 
+        background-color: #ffffff; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease; 
+        z-index: 1050;
+    }
+
+    /* عند ظهور القائمة */
+    .navbar-collapse.show {
+        right: 0; 
+    }
+
+
+    .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1060; 
+    }
+}
+
+
+
+
+
+
+/* start haeder */
+.head-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0;
+    color: var(--red-color);
+    background-color: var(--white-color);
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.head-btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+@media (max-width: 900px) {
+    .carousel-item {
+        height: 89vh;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-caption .bg-danger {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .carousel-caption .fw-bold {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption .countdown div span {
+        font-size: 1rem;
+    }
+
+    .carousel-caption .countdown div p {
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption a {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 70%;
+        transform: translate(-50%, -70%);
+    }
+
+    .carousel-caption .tit1 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption .tit2 {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption .bg-danger {
+        font-size: 0.7rem;
+    }
+
+    .carousel-caption .fw-bold {
+        font-size: 1rem;
+    }
+
+    .carousel-caption .countdown div span {
+        font-size: 0.8rem;
+    }
+
+    .carousel-caption .countdown div p {
+        font-size: 0.6rem;
+    }
+
+    .carousel-caption a {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+
+/* end haeder */
+
+
+/* start welcome section */
+
+#welcome {
+    background-image: url(images/icons/pattern1.png);
+    background-repeat: repeat;
+}
+
+.welcome-img {
+    width: 390px;
+    height: 390px;
+    margin: 50px auto 0;
+    border-radius: 32px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.welcome-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.welcome-text .txt4 {
+    color: var(--black-color);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+.welcome-text .txt4:hover {
+    color: var(--red-color);
+    transition: color 0.3s;
+}
+
+.welcome-text .txt4 i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* end welcome section */
+
+/* start discover-patoplace*/
+
+#discover-patoplace {
+    background-image: url(images/bg-intro-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.discover-patoplace-text {
+    text-align: center;
+    padding: 50px 0;
+    letter-spacing: 1px;
+
+}
+
+/* end discover-patoplace */
+
+/* start content-intro */
+
+#content-intro {
+    height: 80vh;
+}
+
+
+
+#content-intro .img-intro {
+    width: 370px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+#content-intro .container {
+    margin: 0 auto !important;
+    padding: 50px;
+}
+
+#content-intro .img-intro:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#content-intro .row a {
+    color: var(--black-color);
+}
+
+#content-intro .txt4 {
+    color: var(--black-color);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+#content-intro .row a:hover {
+    color: var(--red-color);
+    transition: color 0.3s;
+}
+
+#content-intro i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+#content-intro {
+    padding-bottom: 80rem ! important;
+}
+}
+
+/* end content-intro */
+
+/* Section Background */
+#our-menu {
+    background-image: url(images/icons/pattern2.png);
+    background-repeat: repeat;
+}
+
+
+.tall-card {
+    height: 100%;
+    min-height: 400px;
+}
+
+.wide-card {
+    height: 100%;
+    min-height: 200px;
+}
+
+
+.card-img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tit2 {
+    font-family: 'myfont';
+    font-size: 30px;
+    line-height: 1.2;
+    color: var(--red-color);
+    text-transform: capitalize;
+}
+
+.tit1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: var(--black-color);
+    font-weight: 900;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+
+.discover-btn,
+.discover-btn1 {
+    font-size: 22px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.discover-btn {
+    width: 157px;
+}
+
+.discover-btn1 {
+    width: 255px;
+    height: 60px;
+}
+
+.discover-btn:hover,
+.discover-btn1:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+.card {
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+.carousel .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+.carousel .carousel-indicators .active {
+    background-color: var(--red-color);
+    border: 2px solid var(--red-color);
+}
+
+.carousel .carousel-indicators button:hover {
+    background-color: var(--red-color);
+}
+
+/* end Section Background */
+
+/* start our slider */
+
+
+/* Carousel Caption Styling *
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    #carouselExampleIndicators .carousel-caption {
+        top: 20%;
+    }
+
+    #carouselExampleIndicators .carousel-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    #carouselExampleIndicators .carousel-caption .bg-danger {
+        font-size: 0.8rem;
+    }
+
+    #carouselExampleIndicators .carousel-caption img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselExampleIndicators .carousel-caption {
+        top: 25%;
+    }
+
+    #carouselExampleIndicators .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    #carouselExampleIndicators .carousel-caption .bg-danger {
+        font-size: 0.7rem;
+    }
+
+    #carouselExampleIndicators .carousel-caption img {
+        max-width: 100%;
+    }
+}
+
+/* end our slider */
+
+/* booking */
+
+#booking {
+    background-image: url(images/icons/pattern1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+#booking iframe {
+    z-index: 1 !important;
+    margin: 20px;
+    padding: 20px;
+    width: 9000px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.booking-btn {
+    font-size: 22px;
+    background-color: var(--red-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    width: 157px;
+    height: 60px;
+}
+
+/* Media query for screens smaller than 768px (small and extra-small devices) */
+@media (max-width: 767px) {
+    #booking .container {
+        padding: 2rem !important;
+    }
+
+    #booking .row {
+        flex-direction: column;
+    }
+
+    #booking .welcome-img {
+        width: 90%;
+        height: auto;
+        order: 2;
+    }
+
+    #booking .form-control {
+        font-size: 0.9rem;
+    }
+
+    #booking .head-btn {
+        width: 100% !important;
+    }
+}
+
+/* Media query for screens between 768px and 991px (medium devices) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #booking .container {
+        margin: 3rem !important;
+        padding: 3rem !important;
+    }
+
+    #booking .welcome-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+/* end booking */
+
+/* start reviw */
+
+#carouselExampleReview {
+    height: 90vh;
+    overflow: hidden;
+}
+
+#carouselExampleReview .review-img {
+    width: 110px;
+    height: 110px;
+    border: solid 4px var(--red-color);
+}
+
+#carouselExampleReview p {
+    font-size: 20px;
+}
+
+#carouselExampleReview i {
+    color: var(--red-color);
+}
+
+#carouselExampleReview .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--light-gray-color);
+    transition: all 0.3s ease;
+}
+
+#carouselExampleReview .carousel-indicators .active {
+    background-color: var(--red-color);
+    border: 2px solid var(--red-color);
+}
+
+#carouselExampleReview .carousel-indicators button:hover {
+    background-color: var(--red-color);
+}
+
+
+/* السهم الأيمن والأيسر - اللون والخلفية */
+#carouselExampleReview .carousel-control-prev-icon,
+#carouselExampleReview .carousel-control-next-icon {
+    background-color: rgba(128, 128, 128, 0.7);
+    border-radius: 50%;
+    padding: 25px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+
+#carouselExampleReview .carousel-control-prev-icon:hover,
+#carouselExampleReview .carousel-control-next-icon:hover {
+    background-color: red;
+}
+
+/* end reviw */
+
+
+/* start video */
+
+.section-video {
+    background-image: url('images/bg-cover-video-02.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 50px 0;
+    height: 100vh;
+}
+
+
+.section-video .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+.section-video .content-video {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 150px;
+}
+
+
+.section-video .content-video h3 {
+    color: var(--white-color);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fade-in 1s ease-in-out;
+    font-family: 'Poppins';
+}
+
+.section-video .btn-play {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: fade-in 1s ease-in-out;
+}
+
+.section-video .btn-play i {
+    transition: all 0.3s ease;
+    margin-top: 25px;
+}
+
+.section-video .btn-play:hover {
+    background-color: var(--red-color);
+    color: var(--black-color);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.section-video .btn-play:hover i {
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+
+
+.modal-backdrop {
+    z-index: 1;
+}
+
+iframe {   
+    z-index: 10000 !important;
+}
+
+.btn-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 10001 !important;
+
+
+}
+
+
+/* end video */
+
+
+
+#Blog {
+    height: 80vh;
+}
+
+
+
+#Blog .img-blog {
+    width: 370px;
+    height: 220px;
+    margin: 0 auto;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+#Blog .container {
+    margin: 0 auto !important;
+    padding: 50px;
+}
+
+#Blog .img-blog:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#Blog .row a {
+    color: var(--black-color);
+}
+
+#Blog .txt4 {
+    color: var(--black-color);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+#Blog .row a:hover {
+    color: var(--red-color);
+    transition: color 0.3s;
+}
+
+#Blog i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+@media only screen and ( max-width: 768px) {
+    #Blog {
+        padding-bottom: 82rem ! important;
+    }
+    }
+
+/* end Blog */
+
+/* start sign up */
+.sign-up {
+    background-image: url('images/icons/pattern1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+    height: 35vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-up .txt5 {
+    margin: 10px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 22px;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.sign-up input {
+    border-radius: 8px;
+    border: solid 1px var(--gray-color);
+    padding: 10px 20px;
+    color: #333333;
+    width: 200px;
+
+}
+
+.sign-up button {
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sign-up button:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    transition: all 0.3s ease;
+}
+
+
+
+@media (max-width: 767px) {
+    .sign-up {
+        padding: 1rem;
+    }
+
+    .sign-up .col-12 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* end sign up */
+
+footer {
+    background-color: #222222;
+    color: #ccc;
+    padding: 40px 0;
+}
+
+footer h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer p,
+footer li,
+footer a {
+    color: #999999;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--red-color);
+}
+
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.end-footer {
+    position: absolute;
+    bottom: 10;
+    width: 100%;
+    background-color: #111111;
+    padding: 15px 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.end-footer a {
+    color: var(--red-color);
+}
+
+
+
+.social-icons a {
+    color: #ccc;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f00;
+}
+/* end footer */
+
+/* back to top */
+.backToTop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: none;
+    z-index: 999; 
+    border-radius: 50%;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease-in-out;
+}
+
+.backToTop:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* end back to top */
+
+
+/* our chifes */
+
+.chef-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    height: 350px;
+}
+
+.chef-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.chef-card img {
+    position: relative;
+    top: -70px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #ff0000;
+}
+
+.chef-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.chef-role {
+    color: #888;
+    font-size: 0.9rem;
+}
