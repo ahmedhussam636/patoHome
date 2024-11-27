@@ -965,3 +965,160 @@ footer a {
     color: #888;
     font-size: 0.9rem;
 }
+
+
+.breadcrumb {
+    margin-left: 100px;
+}
+
+
+.breadcrumb .breadcrumb-item a{
+    color: var(--black-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb .breadcrumb-item a:hover{
+    color: var(--red-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.blog-img-overlay{
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.blog-img{
+    width: 820px;
+    height: 615px;
+    border-radius: 16px;
+    transition: transform 0.3s ease-out;
+}
+
+.blog-img:hover{
+    transform: scale(1.05);
+
+}
+
+.blog-img-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px !important;
+    border-radius: 16px;
+    background-color: var(--red-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}   
+
+.blog-date{
+    font-weight: 700;
+    font-size: 39px;
+}
+
+.blog-month{
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.blog-title{
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.blog-title:hover{
+    color: var(--red-color);
+    transition: all 0.3s ease;
+}
+
+.blog-content .txt4 {
+    color: var(--black-color);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+.blog-content .txt4:hover {
+    color: var(--red-color);
+    transition: color 0.3s;
+}
+
+.blog-content .txt4 i {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.page-link{
+    border-radius: 100% !important;
+    color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.active .page-link{
+    background-color: var(--black-color) !important;
+    color: var(--white-color);
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.page-link:hover{
+    color: var(--white-color);
+    background-color: var(--black-color);
+    transition: all 0.3s ease;
+}
+
+.widget-list li{
+    list-style: none;
+}
+
+
+.widget-list a{
+    color: var(--black-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-family: "montserrat";
+}
+
+.widget-list a:hover{
+    color: var(--red-color);
+    transition: color 0.3s;
+}
+
+.widget-list-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+}
+
+.text-truncate a{
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: var(--black-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.f-col{
+    border-right: solid 1px rgba(33, 37, 41, 0.75);
+    padding: 0 20px !important;
+}
+
