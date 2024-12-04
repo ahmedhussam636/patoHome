@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top p-3">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand m-2 p-2" href="#">
+                <img src="images/icons/logo2.png" class="img-fluid rounded-top" alt="Logo" />
+            </a>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler border-0 p-2 m-2 bg-light shadow rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse p-lg-3" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+
+
+    <!-- start gallery -->
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/bg-title-page-02.jpg " class="d-block w-100 alt=" ...">
+                <div class="carousel-caption mb-5" style="transform: translateY(-100%);">
+                    <h2 class="tit1 text-white mb-4 mt-4">gallery</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end gallery -->
+
+
+    <!-- gallery secthion -->
+
+    <!-- gallry btn -->
+    <section id="gallery">
+        <div id="galleryBts">
+            <div class="galleryBtn btnActive" data-category="allCats">all photos</div>
+            <div class="galleryBtn" data-category="interior">interior</div>
+            <div class="galleryBtn" data-category="foods">foods</div>
+            <div class="galleryBtn" data-category="events">events</div>
+            <div class="galleryBtn" data-category="vip">vip guests</div>
+        </div>
+        <div id="galleryPhotos">
+            <div class="photos allCats interior vip" style="background-image: url('images/photo-gallery-01.jpg');">
+                <div class="overlay">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats foods " style="background-image: url('images/photo-gallery-02.jpg');" style="background-image: url('images/photo-gallery-02.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats foods " style="background-image: url('images/photo-gallery-03.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats interior" style="background-image: url('images/photo-gallery-04.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats vip" style="background-image: url('images/photo-gallery-05.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats events" style="background-image: url('images/photo-gallery-06.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats events vip" style="background-image: url('images/photo-gallery-07.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats events" style="background-image: url('images/photo-gallery-08.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <div class="photos allCats interior" style="background-image: url('images/photo-gallery-09.jpg');">
+                <div class="overlay">
+                    
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass">
+                        
+                        </i>
+                    </a>    
+                </div>
+            </div>
+            <nav aria-label="Page navigation example text-center">
+                <ul class="pagination m-lg-5 mx-auto">
+                    <li class="active page-item m-2"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item m-2"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item m-2"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    
+
+    <!-- start sign up -->
+    <div class="sign-up p-2">
+        <form class="row g-3 m-5 p-3 text-center justify-content-center">
+            <div class="col-auto">
+                <span class="h3 fw-bold text-dark">
+                    Specials Sign up
+                </span>
+            </div>
+            <div class="col-auto">
+                <label for="inputPassword2" class="visually-hidden">Email Address</label>
+                <input type="email" class="form-control" id="inputPassword2" placeholder="Email Address">
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div>
+        </form>
+    </div>
+    <!-- end sign up -->
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row g-4 p-4">
+                <!-- Contact Us Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Contact Us</h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-map-marker-alt me-2"></i>8th floor, 379 Hudson St, New York, NY 10018</li>
+                        <li><i class="fa fa-phone me-2"></i>(+1) 96 716 6879</li>
+                        <li><i class="fa fa-envelope me-2"></i>contact@site.com</li>
+                    </ul>
+                    <h4 class="mt-5 text-uppercase">Opening Times</h4>
+                    <ul class="list-unstyled">
+                        <li>09:30 AM – 11:00 PM</li>
+                        <li>Every Day</li>
+                    </ul>
+                </div>
+
+                <!-- Latest Twitter Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Latest Twitter</h4>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">@colorlib</a>: <br> Activello is a good option. It has a slider built into that displays
+                        the featured image in the slider. <br>
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <p><small>21 Dec 2017</small></p>
+                    <p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <a href="#">@colorlib</a>: <br> Activello is a good option. It has a slider built into that displays
+                        the featured image in the slider. <br>
+                        <a href="#">https://buff.ly/2zaSfAQ</a>
+                    </p>
+                    <p><small>21 Dec 2017</small></p>
+                </div>
+
+                <!-- Gallery Section -->
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Gallery</h4>
+                    <div class="row g-2 gallery">
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-01.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-02.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-03.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-04.jpg" alt="Gallery Image 4">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-05.jpg" alt="Gallery Image 1">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-06.jpg" alt="Gallery Image 2">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-07.jpg" alt="Gallery Image 3">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-08.jpg" alt="Gallery Image 4">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-09.jpg" alt="Gallery Image 5">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-10.jpg" alt="Gallery Image 6">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-11.jpg" alt="Gallery Image 7">
+                        </div>
+                        <div class="col-3">
+                            <img src="images/photo-gallery-thumb-12.jpg" alt="Gallery Image 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="end-footer ">
+            <div class="container d-flex mt-1 align-items-center justify-content-between">
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div>
+                    Copyright © 2018 All rights reserved | This template is made with <i class="fa fa-heart"></i> by
+                    <a href="https://colorlib.com" target="_blank">AHMED HUSSAM</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Back to Top Button -->
+    <button class="backToTop btn btn-danger rounded-circle">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    
+
+
+
+        <!-- bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+
+            const btns = document.querySelectorAll(".galleryBtn");
+            for (let b = 0; b < btns.length; b++) {
+                btns[b].addEventListener("click", (e) => {
+                    // button activation
+                    for (let i = 0; i < btns.length; i++) {
+                        btns[i].classList.remove("btnActive");
+                    }
+                    e.target.classList.add("btnActive");
+
+                    // hide/show photos
+                    const activeBtnCategory = e.target.getAttribute("data-category");
+                    const photos = document.querySelectorAll(".photos");
+                    if (activeBtnCategory === "allCats") {
+                        for (let photo = 0; photo < photos.length; photo++) {
+                            photos[photo].style.display = "block";
+                        }
+                    } else {
+                        for (let photo = 0; photo < photos.length; photo++) {
+                            if (photos[photo].classList.contains(activeBtnCategory)) {
+                                photos[photo].style.display = "block";
+                            } else {
+                                photos[photo].style.display = "none";
+                            }
+                        }
+                    }
+                });
+            }
+        </script>
+</body>
+
+</html>
